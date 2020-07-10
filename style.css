@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  text-align: center;
+}
+.logo {
+  background-image: linear-gradient(transparent, transparent),
+    url('https://wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg');
+  background-position: 0 -254px;
+  width: 176px;
+  height: 32px;
+  margin: 0 auto;
+}
+.title {
+  margin-top: 60px;
+}
+.title p {
+  font-size: 15px;
+  margin-top: 7px;
+  font-family: Linux Libertine, Georgia, Times, serif;
+  font-weight: 400;
+}
+.image {
+  position: absolute;
+  top: 225px;
+  transform: translateX(-50%);
+}
+.languages {
+  text-align: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 45px auto;
+}
+.languages > div {
+  width: 150px;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+}
+.languages a {
+  text-decoration: none;
+  color: #3366cc;
+  font-weight: 800;
+}
+.languages p {
+  margin-top: 10px;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+.lan1 {
+  top: 0;
+  right: 60%;
+}
+.lan2 {
+  top: 0;
+  left: 60%;
+}
+.lan3 {
+  top: 20%;
+  right: 80%;
+}
+.lan4 {
+  top: 20%;
+  left: 80%;
+}
+.lan5 {
+  top: 40%;
+  right: 90%;
+}
+.lan6 {
+  top: 40%;
+  left: 90%;
+}
+.lan7 {
+  top: 60%;
+  right: 80%;
+}
+.lan8 {
+  top: 60%;
+  left: 80%;
+}
+.lan9 {
+  top: 80%;
+  right: 60%;
+}
+.lan10 {
+  top: 80%;
+  left: 60%;
+}
+.search {
+  width: 350px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input__container {
+  border: 1px solid #a2a9b1;
+  width: 310px;
+  height: 38px;
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.search-button {
+  background-color: #3366cc;
+  height: 40px;
+  width: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.input__container input {
+  outline: none;
+  border: none;
+  width: 260px;
+  margin-left: 10px;
+}
+.selector {
+  width: 40px;
+  height:  40px;
+  position: relative;
+}
+.input__container select {
+  width: 40px;
+  height: 30px;
+  border: none;
+  color: hsla(0, 0%, 100%, 0);
+  margin-top: 5px;
+}
+.selector i{
+  position: absolute;
+  background-position: 0 -519px;
+  width: 12px;
+  height: 8px;
+  top: 16px;
+  left:  14px;
+  background-image: linear-gradient(transparent,transparent),url('https://wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg');
+}
+.selector option{  
+color: #54595d;
+}
+.button{
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+}
