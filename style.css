@@ -90,16 +90,19 @@ main {
   left: 60%;
 }
 .search {
-  width: 350px;
-  height: 40px;
+  width: 450px;
+  height: 50px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.search:hover .input__container {
+  border: 1px solid #54595d;
+}
 .input__container {
   border: 1px solid #a2a9b1;
-  width: 310px;
+  width: 450px;
   height: 38px;
   display: flex;
   border-bottom-left-radius: 10px;
@@ -113,16 +116,18 @@ main {
   width: 40px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  position: relative;
+  cursor: pointer;
 }
-.input__container input {
+.search_input {
   outline: none;
   border: none;
-  width: 260px;
+  width: 360px;
   margin-left: 10px;
 }
 .selector {
   width: 40px;
-  height:  40px;
+  height: 40px;
   position: relative;
 }
 .input__container select {
@@ -132,21 +137,80 @@ main {
   color: hsla(0, 0%, 100%, 0);
   margin-top: 5px;
 }
-.selector i{
-  position: absolute;
-  background-position: 0 -519px;
+.arrow {
   width: 12px;
   height: 8px;
+}
+.sprite{
+background-image: linear-gradient(transparent, transparent),
+url('https://wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg');
+}
+.first{
+  background-position: 0 -519px;
+  position: absolute;
   top: 16px;
-  left:  14px;
-  background-image: linear-gradient(transparent,transparent),url('https://wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg');
+  left: 14px;
+  
 }
-.selector option{  
-color: #54595d;
+.selector option {
+  color: #54595d;
 }
-.button{
+.search__icon{
+  position: absolute;
+  background-position:  0 -697px;
+  width: 22px;
+  height: 22px;
+  top: 9px;
+  right:9px ;
+}
+.button {
   display: flex;
-  width: 600px;
-  margin: 0 auto;
-  justify-content: center;
+  position: relative;
+  width: 250px;
+  height: 30px;
+  margin: 30px auto 0px;
+  padding: 0 10px ;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid  #a2a9b1;
+  border-radius: 2px;
+  z-index: 1;
+  outline: 16px solid #fff;
+
+}
+.button__TrasIcon {
+  width: 20px;
+  height: 20px;
+  background-image: url(translation.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.button__a{
+  text-decoration: none;
+  cursor: default;
+  font-family: 'Roboto', sans-serif;
+  color: #3366cc;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.button__arrow{
+  width: 10px;
+  height: 20px;
+}
+.second{
+  background-position: 0 -530px;
+  position:absolute;
+  top: 12px;
+  right: 10px;
+}
+.line{
+  position: relative;
+  background-color: #c8ccd1;
+  width: 80%;
+  max-width: 400px;
+  height: 1px;
+  margin: -16px auto 16px;
+  transition: max-width .2s ease-out 400s;
 }
