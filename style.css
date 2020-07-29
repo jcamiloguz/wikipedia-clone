@@ -5,9 +5,10 @@
 main {
   text-align: center;
 }
+html {
+  font-size: 16px;
+}
 .logo {
-  background-image: linear-gradient(transparent, transparent),
-    url('https://wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg');
   background-position: 0 -254px;
   width: 176px;
   height: 32px;
@@ -46,7 +47,7 @@ main {
 }
 .languages p {
   margin-top: 10px;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 .lan1 {
@@ -90,7 +91,8 @@ main {
   left: 60%;
 }
 .search {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   margin: 0 auto;
   display: flex;
@@ -102,7 +104,8 @@ main {
 }
 .input__container {
   border: 1px solid #a2a9b1;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 38px;
   display: flex;
   border-bottom-left-radius: 10px;
@@ -122,7 +125,8 @@ main {
 .search_input {
   outline: none;
   border: none;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   margin-left: 10px;
 }
 .selector {
@@ -141,27 +145,25 @@ main {
   width: 12px;
   height: 8px;
 }
-.sprite{
-background-image: linear-gradient(transparent, transparent),
-url('https://wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg');
+.sprite {
+  background-image: linear-gradient(transparent, transparent), url('./sprite-46c49284.svg');
 }
-.first{
+.first {
   background-position: 0 -519px;
   position: absolute;
   top: 16px;
   left: 14px;
-  
 }
 .selector option {
   color: #54595d;
 }
-.search__icon{
+.search__icon {
   position: absolute;
-  background-position:  0 -697px;
+  background-position: 0 -697px;
   width: 22px;
   height: 22px;
   top: 9px;
-  right:9px ;
+  right: 9px;
 }
 .button {
   display: flex;
@@ -169,15 +171,17 @@ url('https://wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg')
   width: 250px;
   height: 30px;
   margin: 30px auto 0px;
-  padding: 0 10px ;
+  padding: 0 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  border: 1px solid  #a2a9b1;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
   border-radius: 2px;
   z-index: 1;
   outline: 16px solid #fff;
-
+}
+.button:hover {
+  background-color: #ffff;
 }
 .button__TrasIcon {
   width: 20px;
@@ -187,30 +191,207 @@ url('https://wikipedia.org/portal/wikipedia.org/assets/img/sprite-46c49284.svg')
   background-repeat: no-repeat;
   background-size: contain;
 }
-.button__a{
+.button__a {
   text-decoration: none;
   cursor: default;
   font-family: 'Roboto', sans-serif;
   color: #3366cc;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
-.button__arrow{
+.button__arrow {
   width: 10px;
   height: 20px;
 }
-.second{
+.second {
   background-position: 0 -530px;
-  position:absolute;
+  position: absolute;
   top: 12px;
   right: 10px;
 }
-.line{
+.line {
   position: relative;
   background-color: #c8ccd1;
   width: 80%;
   max-width: 400px;
   height: 1px;
   margin: -16px auto 16px;
-  transition: max-width .2s ease-out 400s;
+  transition: max-width 0.2s ease-out 400s;
+}
+.info {
+  width: 100%;
+  height: 400px;
+  /*  background-color: #d2d2d */
+  margin-top: 30px;
+  font-family: 'roboto';
+}
+.info__container {
+  width: 85%;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+.project {
+  /*   background-color: #8d8d8d; */
+  display: flex;
+  height: 100%;
+  align-items: center;
+  max-width: 350px;
+  padding: 5px;
+}
+.project h4 {
+  color: #3366cc;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-align: start;
+}
+.project p {
+  color: #54595d;
+  font-size: 0.8rem;
+  text-align: start;
+}
+.project__img {
+  background-repeat: no-repeat;
+}
+.info__details {
+  overflow-wrap: break-word;
+}
+.info__details  span {
+  color: #3366cc;
+}
+.host{
+  position: relative;
+  
+}
+.host>.project__img{
+  position: absolute;
+}
+.host>.info__details{
+  position: relative;
+  padding-left: 3.5rem;
+}
+.app {
+  grid-row: 2 / span 2;
+  background-color: #F8F9FA;
+  position: relative;
+  align-items: flex-start;
+}
+.source{
+  grid-column: 2;
+}
+.app>.project__img{
+  background-position: 0 -719px;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  margin-left: 5px;
+}
+.app>.info__details{
+  position: relative;
+  padding-left: 3.5rem;
+}
+.commons > .project__img {
+  width: 47px;
+  height: 47px;
+  background-position: 0 0;
+}
+.voyage > .project__img {
+  width: 36px;
+  height: 36px;
+  background-position: 0 -446px;
+}
+.dictonary > .project__img {
+  background-position: 0 -482px;
+  width: 37px;
+  height: 37px;
+}
+.books > .project__img {
+  background-position: 0 -126px;
+  width: 37px;
+  height: 37px;
+}
+.news > .project__img {
+  background-image: url(./news.png);
+  background-position: 0 0;
+  background-size: 47px 26px;
+  width: 47px;
+  height: 26px;
+}
+.data > .project__img {
+  background-position: 0 -163px;
+  width: 49px;
+  height: 49px;
+}
+.university > .project__img {
+  background-position: 0 -409px;
+  width: 43px;
+  height: 37px;
+}
+.quote > .project__img {
+  background-position: 0 -286px;
+  width: 42px;
+  height: 42px;
+}
+.media > .project__img {
+  background-position: 0 -47px;
+  width: 42px;
+  height: 42px;
+}
+.source > .project__img {
+  background-position: 0 -328px;
+  width: 39px;
+  height: 39px;
+}
+.species > .project__img {
+  background-position: 0 -367px;
+  width: 42px;
+  height: 42px;
+}
+.meta > .project__img {
+  background-position: 0 -89px;
+  width: 37px;
+  height: 37px;
+}
+.host > .project__img {
+  background-position: 0 -212px;
+  width: 42px;
+  height: 42px;
+}
+.ios{
+  background-position: 0 -579px;
+  width: 110px;
+  height: 38px;
+  display: inline-block;
+}
+.android{
+  display: inline-block;
+  background-position: 0 -541px;
+  width: 124px;
+  height: 38px;
+}
+@media screen and (max-width:900px){
+  .info__container{
+    grid-template-rows:1fr 1fr 1fr 1fr ;
+    grid-template-columns:1fr 1fr 1fr ;
+  }
+  .host{
+    grid-column:  1  / span 3;
+    grid-row: 1;
+    justify-self: center;
+  }
+  .app{
+    grid-column:  1  / span 3;
+    grid-row: 2;
+    justify-self: center;
+  }
+  .source{
+    grid-column: auto;
+  }
+  .project{
+    display: block;
+  }
+
 }
