@@ -293,6 +293,12 @@ html {
   position: relative;
   padding-left: 3.5rem;
 }
+.app h4{
+  font-weight: bold;
+}
+.app p{
+  margin: 10px 0;
+}
 .commons > .project__img {
   width: 47px;
   height: 47px;
@@ -371,6 +377,24 @@ html {
   background-position: 0 -541px;
   width: 124px;
   height: 38px;
+}
+.footer{
+color: #54595d ;
+font-family: 'roboto';
+font-size:0.8rem;
+display: flex;
+text-align: center;
+justify-content: center;
+padding: 20px 0;
+}
+.footer a{
+  text-decoration: none;
+  color: #3366cc;
+  margin: 0 10px;
+  
+}
+.footer span{
+  color: #3366cc;
 }
 @media screen and (max-width:900px){
   .info__container{
